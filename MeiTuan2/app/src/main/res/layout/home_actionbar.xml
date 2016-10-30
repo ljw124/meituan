@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="#36B9AF"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="郑州"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="5dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_arrow_white_down"
+        android:background="@null"
+        android:layout_marginLeft="3dp"/>
+    <ImageButton
+        android:id="@+id/ib_home_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_home_actionbar"
+        android:background="@null"/>
+    <ImageButton
+        android:id="@+id/ib_home_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_more"
+        android:background="@null"/>
+</LinearLayout>

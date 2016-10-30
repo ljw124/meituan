@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp">
+
+    <ImageButton
+        android:id="@+id/ib_dianying_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_location_back"
+        android:layout_marginLeft="3dp"
+        android:background="@null"
+        android:layout_centerVertical="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        <Button
+            android:id="@+id/btn_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热映"/>
+        <Button
+            android:id="@+id/btn_wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待映"/>
+        <Button
+            android:id="@+id/btn_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商城"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/ib_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_action_search"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

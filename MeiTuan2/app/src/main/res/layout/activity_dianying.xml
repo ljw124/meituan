@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/dianying_actionbar_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#aaa"/>
+    <!--<com.recker.flybanner.FlyBanner
+        android:id="@+id/banner_dianying2"
+        android:layout_width="match_parent"
+        app:points_visibility="true"
+        app:points_position="CENTER"
+        app:points_container_background="#2236B9AF"
+        android:layout_height="120dp"/>-->
+    <com.stx.xhb.xbanner.XBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/xbanner_dianying2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:pointsPosition="CENTER"
+        app:AutoPlayTime="3000"
+        app:isAutoPlay="true"
+        app:pointsVisibility="true"
+        app:pointsContainerBackground="#44aaaaaa" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热映影片"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/ic_forward_more"
+            android:background="@null"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_hot"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:numColumns="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#55aaaaaa"
+        android:layout_marginTop="5dp"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_dianying"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

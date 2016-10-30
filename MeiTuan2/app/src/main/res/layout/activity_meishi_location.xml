@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+        <ImageButton
+            android:id="@+id/iv_meishi_location_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_location_back"
+            android:layout_marginLeft="3dp"
+            android:background="@null"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:background="#55aaaaaa"
+            android:hint="输入商家、分类或商圈"
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="分类"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.baidu.mapapi.map.MapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/map_xuni_navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="虚拟导航"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/map_navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始导航"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+</LinearLayout>

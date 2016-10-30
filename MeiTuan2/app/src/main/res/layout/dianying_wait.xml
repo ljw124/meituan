@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/dianying_actionbar_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="预告片推荐"
+        android:textSize="18sp"
+        android:background="#22aaaaaa"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_wait"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:numColumns="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="近期最受期待"
+        android:background="#22aaaaaa"
+        android:textSize="18sp"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_dianying">
+
+    <com.stx.xhb.xbanner.XBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/xbanner_dianying"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:pointsPosition="CENTER"
+        app:AutoPlayTime="3000"
+        app:isAutoPlay="true"
+        app:pointsVisibility="true"
+        app:pointsContainerBackground="#44aaaaaa" />
+   <!-- <com.recker.flybanner.FlyBanner
+        android:id="@+id/banner_dianying"
+        android:layout_width="match_parent"
+        app:points_visibility="true"
+        app:points_position="CENTER"
+        app:points_container_background="#36B9AF"
+        android:layout_height="200dp"/>-->
+
+
+</LinearLayout>

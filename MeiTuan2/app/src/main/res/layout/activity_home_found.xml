@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp" >
+        <ImageButton
+            android:id="@+id/ib_home_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_location_back"
+            android:layout_marginLeft="3dp"
+            android:background="@null"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:id="@+id/et_home_input"
+            android:layout_width="250dp"
+            android:layout_height="26dp"
+            android:layout_centerInParent="true"
+            android:background="#55aaaaaa"
+            android:hint="输入商家、品类或商圈"
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/btn_home_search"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:text="搜索"
+            android:background="@null" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaa"/>
+
+    <GridView
+        android:id="@+id/gv_home_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"/>
+    <ListView
+        android:id="@+id/lv_home_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/btn_home_delet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除历史记录"/>
+</LinearLayout>
